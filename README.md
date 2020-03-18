@@ -1,7 +1,7 @@
 # Universal Weather - Compare Alaska weather to Mars
 ---
 ## Problem statement
-> Your goal is to build a Proof Of Concept app that will collect weather data for Mars and Fairbanks Alaska. The app should be able to produce a JSON array from the collected data that shows the daily max and daily min temperature for Mars and Fairbanks, Alaska for the last 10 days.
+> Your goal is to build a Proof Of Concept app that will collect weather data for Mars and Fairbanks, Alaska. The app should be able to produce a JSON array from the collected data that shows the daily max and daily min temperature for Mars and Fairbanks, Alaska for the last 7 days.
 
 For example (not real data):
 ```
@@ -24,10 +24,10 @@ For example (not real data):
 ```
 ## Data sources
 ### Mars
-NASA’s Mars Insight Mission provides daily temperature readings from the surface of Mars. The data can be accessed via API here:
-https://api.nasa.gov/
-Look at the documentation for InSight: Mars Weather Service API
-Api_key = 1SVv7ZFZhGafR3BT4Q7ClcjhWmhp9DGt49ALovOL
+NASA’s Mars Insight Mission provides daily temperature readings from the surface of Mars.
+* The data can be accessed via API here: [https://api.nasa.gov/](https://api.nasa.gov/)
+* Look at the documentation for [InSight: Mars Weather Service API.](https://api.nasa.gov/assets/insight/InSight%20Weather%20API%20Documentation.pdf)
+  * Api_key = `1SVv7ZFZhGafR3BT4Q7ClcjhWmhp9DGt49ALovOL`
 
 ### Fairbanks, Alaska
 A snapshot of last 90+ days of data recordings have been provided in a file in this repo: `fairbanks data.csv`
