@@ -1,9 +1,14 @@
 # Universal Weather - Compare Alaska weather to Mars
 ---
 ## Problem statement
-> Your goal is to build a Proof Of Concept app that will collect weather data for Mars and Fairbanks, Alaska. The app should be able to produce a JSON array from the collected data that shows the daily max and daily min temperature for Mars and Fairbanks, Alaska for the last 7 days.
+> Your goal is to build a Proof Of Concept app that will collect weather data for Mars and Fairbanks, Alaska. The app should be able to do the following:
 
-For example (not real data):
+1. run from the CLI,
+1. ingest both sources of data into a database, and
+1. export the data out of that database in a structured format that shows the daily max and min temperature for Mars and Fairbanks Alaska for the last 7 days.
+
+
+For example, if you chose to export the data in JSON, it could look like this (not real data):
 ```
 [
   {
@@ -42,3 +47,5 @@ A simple `docker-compose` is provided for you in this repo that includes postgre
 * `docker-compose ps` - list of running services
 
 Once the compose file is running, you should be able to connect locally. The postgres user password is _<insert the name of this repo>_
+
+* Dev note: In certain Mac OS version, when you try to install the `psycopg2` module, it doesn't automatically install `psycopg-binary` module, which is apparently required now.
